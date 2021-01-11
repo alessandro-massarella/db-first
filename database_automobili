@@ -4,27 +4,28 @@ Scegliere un nome per la tabella
 Scegliere le proprieta' rilevanti che descrivono ogni singolo elemento ( colonne )
 Associare ad ogni singola proprieta' il tipo di dato migliore per gestire quella informazione
 
-
+(per convenzione (e per praticità perché poi devono essere richiamati con delle query) i nomi dei campi si preferisce scriverli in minuscolo e in snake_case ad es.:
+n_proprietari, cat_emissioni, chilometraggio_km ecc. senza caratteri di punteggiatura o spazi)
 
 
 NOME TABELLA: INFORMAZIONI TECNICHE AUTOMOBILI
 
     COLONNE:
 
-        ID: numero INT
-        MARCA:  stringa VARCHAR(50)
-        ALIMENTAZIONE: stringa VARCHAR(50)
-        CILINDRATA (In Centimetri cubici): numero SMALLINT
-        CARROZZERIA: stringa VARCHAR(50)
-        CHILOMETRAGGIO (IN KM): numero SMALLINT
-        CAVALLI (IN CV): numero SMALLINT
-        PORTE: numero TINYINT
-        CAMBIO: stringa VARCHAR(50)
-        POSTI: numero TINYINT
-        N. PROPRIETARI: numero TINYINT
-        CAT.EMISSIONI: stringa VARCHAR(20)
-        SCADENZA BOLLO: data YEAR
-
-        DESCRIZIONE: stringa TEXT
+        id: numero INT
+        marca: stringa VARCHAR(50)
+        alimentazione: stringa VARCHAR(50)
+        cilindrata_cm3: numero SMALLINT
+        carrozzeria: stringa VARCHAR(50)
+        chilometraggio_km: numero SMALLINT
+        cavalli_cv: numero SMALLINT
+        porte: numero TINYINT
+        cambio: stringa VARCHAR(50)
+        posti: numero TINYINT
+        n_proprietari: numero TINYINT
+        cat_emissioni: stringa VARCHAR(20)
+        scadenza_bollo: data YEAR
+        prezzo: numero MEDIUMINT
+        descrizione: stringa TEXT
 
 
